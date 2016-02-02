@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+#Albums and Images
+2.times do |n|
+  album = Album.create(title: "Album-#{n+1}", description: "testing")
+  # Images
+  2.times do |j|
+    Image.create(title: "Photo-#{j+1}", description: "testing", album_id: album.id)
+  end
+end 
