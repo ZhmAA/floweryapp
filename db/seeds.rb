@@ -13,5 +13,10 @@
   2.times do |j|
     Image.create(title: "Photo-#{j+1}", description: "testing", album_id: album.id)
   end
-end 
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+end
+
+3.times do |i|
+  Blog.create(title: "Title-#{i+1}", description: "blog description")
+end
+
+admin = AdminUser.create!(email: 'adminnew@example.com', password: 'password', password_confirmation: 'password')

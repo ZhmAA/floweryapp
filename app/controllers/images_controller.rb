@@ -1,10 +1,10 @@
 class ImagesController < ApplicationController
   def index
-  	@image = Image.all
+  	@images = Image.all.reverse
   end
 
   def show
-  	@images = Image.find(params[:id])
+  	@image = Image.find(params[:id])
   end
 
   private
