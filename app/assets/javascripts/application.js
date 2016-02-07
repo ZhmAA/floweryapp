@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require fancybox
+
+//fancybox
+$(document).ready(function() {
+$("a.fancybox").fancybox({ 
+        parent: 'body',
+        openEffect  : 'none',
+        closeEffect : 'none'
+    });
+});
