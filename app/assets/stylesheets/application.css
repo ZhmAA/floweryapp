@@ -12,5 +12,14 @@
  *
  *= require_self
  *= require fancybox
- *= require_tree .
+ *= require animate
+ *= require bootstrap.min
+ *= require ionicons.min
+ *= require main
+ *= require mainpages
+ *= require owl.carousel
+ *= require owl.theme
+ *= require responsive
+ *= require slider
+ * require_tree .
  */
