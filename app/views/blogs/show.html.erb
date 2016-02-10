@@ -1,2 +1,34 @@
-<h1>Blogs#show</h1>
-<p>Find me in app/views/blogs/show.html.erb</p>
+<!--
+        ==================================================
+        Global Page Section Start
+        ================================================== -->
+        <section class="global-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2><%= @blog.title %></h2>
+                            <div class="portfolio-meta">
+                                <span>Dec 11, 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/#Page header-->
+            <section class="single-post">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="post-img">
+                                <%= image_tag @blog.image.url, :class => 'img-responsive', alt: @blog.title, title: @blog.title %>
+                            </div>
+                            <div class="post-content">
+                                <p>
+                                    <%= @blog.description %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
