@@ -431,6 +431,17 @@ figure figcaption p {
 #contact-section .contact-form .btn-send:hover {
   border: 1px solid #345025;
 }
+/*Sidebar form button*/
+.sidebar .btn-send {
+  margin-top: 15px;
+  color: #fff;
+  outline: none;
+  background: #345025;
+}
+.sidebar .btn-send:hover {
+  border: 1px solid #345025;
+}
+
 #contact-section input {
   display: block;
   height: 40px;
