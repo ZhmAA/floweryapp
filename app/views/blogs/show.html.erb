@@ -19,14 +19,17 @@
             <section class="single-post">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="post-img">
-                                <%= image_tag @blog.image.url, :class => 'img-responsive', alt: @blog.title, title: @blog.title %>
-                            </div>
-                            <div class="post-content">
-                                <p>
-                                    <%= @blog.description %>
-                                </p>
+                        <div class="col-md-4">
+                          <%= render 'sidebar' %>
+                            <div class="col-md-8">
+                                <div class="post-img">
+                                    <%= image_tag @blog.image.url, :class => 'img-responsive', alt: @blog.title, title: @blog.title %>
+                                </div>
+                                <div class="post-content">
+                                    <p>
+                                        <%= @blog.description %>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
