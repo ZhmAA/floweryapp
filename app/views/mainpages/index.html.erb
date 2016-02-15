@@ -19,19 +19,15 @@
                                     <div class="overlay">
                                         <div class="buttons">
                                             <%= link_to "Open", album, :rel => "gallery", :class => "fancybox", :method => :get  %>
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
                                         </div>
                                     </div>
                                 </div>
                                 <figcaption>
-                                <h4>
-                                <a href="#">
-                                    <%= album.title %>
-                                </a>
-                                </h4>
-                                <p>
-                                    <%= album.description %>
-                                </p>
+                                  <h4>
+                                  <%= link_to album do %>
+                                      <%= album.title %>
+                                  <% end %>
+                                  </h4>
                                 </figcaption>
                             </figure>
                         </div>
@@ -73,7 +69,7 @@
                     <div class="section-heading">
                         <h1 class="title wow fadeInDown" data-wow-delay=".3s">НАШИ ПРЕИМУЩЕСТВА</h1>
                         <p class="wow fadeInDown" data-wow-delay=".5s">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,<br> quasi dolores numquam dolor vero ex, tempora commodi repellendus quod laborum.
+                            3 причины, по которым более 200 невест выбирают студию "Flowery" каждый свадебный сезон
                         </p>
                     </div>
                     <div class="row">
@@ -81,12 +77,12 @@
                             <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <div class="media-left">
                                     <div class="icon">
-                                        <i class="ion-ios-flask-outline"></i>
+                                        <i class="ion-ios-flower-outline"></i>
                                     </div>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Преимущество 1</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                    <h4 class="media-heading">Уникальность</h4>
+                                    <p>Мы создаем свои букеты и композиции из цветка, который сами же и выращиваем. </p>
                                 </div>
                             </div>
                         </div>
@@ -94,12 +90,12 @@
                             <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
                                 <div class="media-left">
                                     <div class="icon">
-                                        <i class="ion-ios-lightbulb-outline"></i>
+                                        <i class="ion-cash"></i>
                                     </div>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Преимущество 2</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                    <h4 class="media-heading">Стоимость</h4>
+                                    <p>Внеконкурентная стоимость всех композиций, выполненных студией флористики и дизайна"Flowery"</p>
                                 </div>
                             </div>
                         </div>
@@ -107,12 +103,12 @@
                             <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
                                 <div class="media-left">
                                     <div class="icon">
-                                        <i class="ion-ios-lightbulb-outline"></i>
+                                        <i class="ion-ios-time-outline"></i>
                                     </div>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Преимущество 3</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                    <h4 class="media-heading">Свежесть</h4>
+                                    <p>Сегоднешняя свежесть цветочного материала, используемого в работе мастеров "Flowery".</p>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +145,7 @@
             ==================================================
             Blog Section Start
             ================================================== -->
-            <section id="feature">
+            <section id="blog">
                 <div class="container">
                     <div class="section-heading">
                         <h1 class="title wow fadeInDown" data-wow-delay=".3s">НАШ БЛОГ</h1>
@@ -186,7 +182,10 @@
                             </article>
                         </div>
                       <% end %>
+                      <div id="blog_main_button">
+                          <%= link_to "Все статьи", blogs_path, :class => "btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green"%>
+                      </div>
                     </div>
                 </div>
-            </section><!-- /#feature -->
+            </section>
             </section>
