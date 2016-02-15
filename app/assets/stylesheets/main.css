@@ -1116,3 +1116,17 @@ article {
 #blog .media .media-left {
   padding-right: 25px;
 }
+#blog_main_button .btn {
+  background: #345025 none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: normal;
+  line-height: 1em;
+  margin-top: 30px;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  float: right;
+  box-shadow: 0 0 0 1px #345025;
+}
