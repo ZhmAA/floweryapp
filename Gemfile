@@ -38,6 +38,10 @@ gem "fog"
 #Open image-gallery
 gem 'fancybox2-rails', '~> 0.2.8'
 
+#Forms and send emails
+gem 'mail_form'
+gem 'simple_form'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

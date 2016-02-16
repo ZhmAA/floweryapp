@@ -30,7 +30,12 @@
 <%= yield %>
   
   <!-- Footer -->
-  <%= render 'shared/footer' %>
+  
+    <% if current_page?(new_contact_path) %>
+      <%= render 'shared/contact_footer' %>
+    <% else %>
+      <%= render 'shared/footer' %>
+    <% end %>
 
 </body>
 </html>

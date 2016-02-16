@@ -21,5 +21,11 @@
  *= require owl.theme
  *= require responsive
  *= require slider
+ *= require contacts
  * require_tree .
  */
+
+
+.hidden {
+  display: none;
+}

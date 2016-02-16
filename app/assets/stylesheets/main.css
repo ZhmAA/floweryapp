@@ -479,7 +479,7 @@ figure figcaption p {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 #contact-section .address,
-#contact-section .email,
+#contact-section .address-details .email,
 #contact-section .phone {
   text-align: center;
   background: #F7F7F7;
@@ -556,7 +556,7 @@ ul.social-icons li {
 .global-page-header {
   background-attachment: fixed;
   background-size: cover;
-  padding: 25px 0 25px 0;
+  padding: 35px 0 25px 0;
   position: relative;
   background: #345025;
   color: #fff;
@@ -1130,3 +1130,9 @@ article {
   float: right;
   box-shadow: 0 0 0 1px #345025;
 }
+
+/*sidebar form*/
+.sidebar #contact_message {
+  display: none;
+}
+
