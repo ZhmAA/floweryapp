@@ -1131,3 +1131,8 @@ article {
   box-shadow: 0 0 0 1px #345025;
 }
 
+/*sidebar form*/
+.sidebar #contact_message {
+  display: none;
+}
+
