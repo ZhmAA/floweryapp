@@ -1,10 +1,12 @@
 class BlogsController < ApplicationController
   def index
   	@blogs = Blog.all.reverse
+    @contact = Contact.new
   end
 
   def show
   	@blog = Blog.find(params[:id])
+    @contact = Contact.new
   end
 
   private
