@@ -12,7 +12,9 @@ ActiveAdmin.register_page "Dashboard" do
 
   section "Last Images" do
     table_for Image.order("created_at desc").limit(20) do
-      column :title
+      column :title do |image|
+        link_to image.title, [:admin, image]
+      end
       column :description
     end
     strong { link_to "View All Images", admin_images_path }
