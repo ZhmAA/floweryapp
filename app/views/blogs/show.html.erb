@@ -8,9 +8,9 @@
                     <div class="col-md-12">
                         <div class="block">
                             <h2><%= @blog.title %></h2>
-                            <div class="portfolio-meta">
+                            <!--<div class="portfolio-meta">
                                 <span>Dec 11, 2020</span>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                                 </div>
                                 <div class="post-content">
                                     <p>
-                                        <%= @blog.description %>
+                                        <%= @blog.description.html_safe %>
                                     </p>
                                 </div>
                             </div>

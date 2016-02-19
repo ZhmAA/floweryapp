@@ -29,6 +29,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'activeadmin', github: 'activeadmin'
 #Authentification user
 gem 'devise'
+#editor for admin panel
+gem 'ckeditor'
 
 #Upload images
 gem 'carrierwave'

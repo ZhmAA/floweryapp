@@ -6,6 +6,7 @@ class AlbumsController < ApplicationController
   def show
   	@album = Album.find(params[:id])
   	@images = @album.images.reverse
+    @contact = Contact.new
   end
 
   private
