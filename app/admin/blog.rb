@@ -14,5 +14,16 @@ ActiveAdmin.register Blog do
 #   permitted
 # end
 
+  form do |f|
+    f.inputs do
+      f.input :title
+      f.input :description, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} }
+      f.input :image
+      f.input :meta_title
+      f.input :meta_description
+      f.input :keywords
+    end
+    f.button "Save"
+  end
 
 end

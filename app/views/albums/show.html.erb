@@ -2,9 +2,6 @@
                 <div class="container">
                     <div class="section-heading">
                         <h1 class="title wow fadeInDown" data-wow-delay=".3s"><%= @album.title %></h1>
-                        <p class="wow fadeInDown" data-wow-delay=".5s">
-                            Описание альбома
-                        </p>
                     </div>
                     <div class="row">
                       <% @images.each do |image| %>
@@ -31,6 +28,13 @@
                             </figure>
                         </div>
                       <% end %>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <p><%= @album.description.html_safe %></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section> 
