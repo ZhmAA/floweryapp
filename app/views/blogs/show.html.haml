@@ -1,0 +1,18 @@
+/ Blog Show Page
+%section.global-page-header
+  .container
+    .row
+      .col-md-12
+        .block
+          %h2= @blog.title
+%section.single-post
+  .container
+    .row
+      .col-md-4
+        = render 'sidebar'
+      .col-md-8
+        .post-img
+          = image_tag @blog.image.url, :class => 'img-responsive', alt: @blog.title, title: @blog.title
+        .post-content
+          %p
+            = @blog.description.html_safe

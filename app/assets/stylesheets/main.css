@@ -1147,3 +1147,8 @@ article {
   margin-top: 15px;
   padding: 8px 18px;
 }
+
+/*for urls titles*/
+.label {
+  display: none;
+}

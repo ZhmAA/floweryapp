@@ -1,0 +1,19 @@
+/ Menu Section Start
+%header#top-bar.navbar-fixed-top.animated-header
+  .container
+    .navbar-header
+      / logo
+      .navbar-brand
+        %a{:href => "/"}
+          %span.label
+            Главная
+          %img{:alt => "", :src => "/images/logo.png"}
+    / main menu
+    %nav.collapse.navbar-collapse.navbar-right{:role => "navigation"}
+      .main-menu
+        %ul.nav.navbar-nav.navbar-right
+          %li= link_to 'Каталог', root_path(anchor: 'catalog')
+          %li= link_to 'О нас', root_path(anchor: 'about')
+          %li= link_to 'Школа', root_path(anchor: 'school')
+          %li= link_to 'Блог', blogs_path
+          %li= link_to 'Контакты', root_path(anchor: 'contact-section')

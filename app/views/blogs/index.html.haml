@@ -1,0 +1,23 @@
+/ Blogs Global Page
+%section.global-page-header
+  .container
+    .row
+      .col-md-12
+        .block
+          %h2 НАШ БЛОГ
+%section#blog-full-width
+  .container
+    .row
+      .col-md-4
+        = render 'sidebar'
+      .col-md-8
+        - @blogs.each do |blog|
+          %article.wow.fadeInDown{"data-wow-delay" => ".3s", "data-wow-duration" => "500ms"}
+            .blog-post-image
+              = link_to blog do
+                = image_tag blog.image.url, :class => 'img-responsive', alt: blog.title, title: blog.title
+            .blog-content
+              %h2.blogpost-title
+                = blog.title
+              %p= blog.description.split[0..32].join(' ').html_safe
+              = link_to "Подробнее", blog, :class => "btn btn-dafault btn-details"

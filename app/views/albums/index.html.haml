@@ -1,0 +1,20 @@
+/ Albums Global Page
+%section#catalog.works
+  .container
+    .section-heading
+      %h1.title.wow.fadeInDown{"data-wow-delay" => ".3s"} Каталог
+      %p.wow.fadeInDown{"data-wow-delay" => ".5s"}
+        бла бла бла
+    .row
+      - @albums.each do |album|
+        .col-sm-3.col-xs-12
+          %figure.wow.fadeInLeft.animated.portfolio-item{"data-wow-delay" => "0ms", "data-wow-duration" => "500ms"}
+            .img-wrapper
+              = image_tag album.image.url, :class => 'img-responsive', :alt => album.title, :title => album.title
+              .overlay
+                .buttons
+                  = link_to "Open", album, :rel => "gallery", :class => "fancybox", :method => :get
+            %figcaption
+              %h4
+                %a{:href => "#"}
+                  = album.title

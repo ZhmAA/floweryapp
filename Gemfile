@@ -35,7 +35,7 @@ gem 'ckeditor'
 #Upload images
 gem 'carrierwave'
 gem 'mini_magick'
-gem "fog"
+#gem "fog"
 
 #Open image-gallery
 gem 'fancybox2-rails', '~> 0.2.8'
@@ -46,6 +46,8 @@ gem 'simple_form'
 
 #SEO url
 gem 'friendly_id'
+
+gem 'haml'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
