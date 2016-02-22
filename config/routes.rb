@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-    
+
   mount Ckeditor::Engine => '/ckeditor'
   
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   resources :blogs
 
   resources :contacts, only: [:new, :create]
+
+  get "*404", via: :all, to: "errors#not_found"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
