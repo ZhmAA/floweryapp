@@ -7,6 +7,9 @@ class BlogsController < ApplicationController
   def show
   	@blog = Blog.find(params[:id])
     @contact = Contact.new
+    @meta_title = @blog.meta_title
+    @meta_description = @blog.meta_description
+    @keywords = @blog.keywords
   end
 
   private
