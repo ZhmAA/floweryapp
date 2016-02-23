@@ -1136,6 +1136,11 @@ article {
   display: none;
 }
 
+.sidebar .form-horizontal .form-group {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 /*School button */
 
 .block .btn {
@@ -1152,3 +1157,4 @@ article {
 .label {
   display: none;
 }
+
