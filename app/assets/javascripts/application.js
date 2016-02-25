@@ -39,7 +39,7 @@ jQuery("#top").click(function () {
    .attr('href')
    .substring(2);
   if(jQuery.trim(it)!=''){
-   jQuery('html,body').animate({scrollTop:jQuery('#'+it).offset().top},800);
+   jQuery('html,body').animate({scrollTop:jQuery('#'+it).offset().top - 80},800);
    return false;
   }
  });

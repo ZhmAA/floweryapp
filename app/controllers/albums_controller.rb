@@ -4,9 +4,9 @@ class AlbumsController < ApplicationController
   end
 
   def show
-  	@album = Album.find(params[:id])
+  	contact_form
+    @album = Album.find(params[:id])
   	@images = @album.images.reverse
-    @contact = Contact.new
     @meta_title = @album.meta_title
     @meta_description = @album.meta_description
     @keywords = @album.keywords
