@@ -7,7 +7,17 @@
   <%= csrf_meta_tags %>
   
   <%= favicon_link_tag 'favicon.ico' %>
+
+  <title><%= @meta_title %></title>
+  <meta name="description" content="<%= @meta_description %>" />
+  <meta name="keywords" content="<%= @keywords %>" />
   
+  <!-- Vkontakte Widget -->
+  <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+  <script type="text/javascript">
+    VK.Widgets.Group("vk_groups", {mode: 0, width: "320", height: "400", color1: 'FFFFFF', color2: '2B587A', color3: '345025'}, 56301378);
+  </script>
+
   <!-- Google Analitics -->
 
 
@@ -20,6 +30,7 @@
   
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
+  
   <!-- Header -->
     <% if current_page?(root_path) %>
       <%= render 'shared/main_header' %>

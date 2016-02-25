@@ -1,0 +1,23 @@
+/Images Global Page
+%section#catalog.works
+  .container
+    .section-heading
+      %h1.title.wow.fadeInDown{"data-wow-delay" => ".3s"} Каталог фото
+      %p.wow.fadeInDown{"data-wow-delay" => ".5s"}
+        Описание альбома
+    .row
+      - @images.each do |image|
+        .col-sm-3.col-xs-12
+          %figure.wow.fadeInLeft.animated.portfolio-item{"data-wow-delay" => "0ms", "data-wow-duration" => "500ms"}
+            .img-wrapper
+              = image_tag image.image.url, :class => 'img-responsive', :alt => "alternative text"
+              .overlay
+                .buttons
+                  %a.fancybox{:href => "images/portfolio/item-1.jpg", :rel => "gallery"} Demo
+                  %a{:href => "single-portfolio.html", :target => "_blank"} Details
+            %figcaption
+              %h4
+                %a{:href => "#"}
+                  = image.title
+              %p
+                = image.description

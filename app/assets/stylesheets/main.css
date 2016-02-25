@@ -1136,3 +1136,25 @@ article {
   display: none;
 }
 
+.sidebar .form-horizontal .form-group {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/*School button */
+
+.block .btn {
+  background: #345025 none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 0;
+  box-shadow: 0 0 0 1px #345025;
+  color: #fff;
+  margin-top: 15px;
+  padding: 8px 18px;
+}
+
+/*for urls titles*/
+.label {
+  display: none;
+}
+

@@ -1,0 +1,34 @@
+/ Menu Section Start
+%header#top-bar.navbar-fixed-top.animated-header
+  .container
+    .navbar-header
+      / logo
+      .navbar-brand
+        %a{:href => "/"}
+          %span.label
+            Главная
+          %img{:alt => "", :src => "/images/logo.png"}
+    / main menu
+    %nav.collapse.navbar-collapse.navbar-right{:role => "navigation"}
+      .main-menu
+        %ul.nav.navbar-nav.navbar-right
+          %li= link_to 'Каталог', root_path(anchor: 'catalog')
+          %li= link_to 'О нас', root_path(anchor: 'about')
+          %li= link_to 'Школа', root_path(anchor: 'school')
+          %li= link_to 'Блог', root_path(anchor: 'blog')
+          %li= link_to 'Контакты', root_path(anchor: 'contact-section')
+/ Header Section Start
+%section#hero-area
+  .container
+    .row
+      .col-md-12.text-center
+        .block.wow.fadeInUp{"data-wow-delay" => ".3s"}
+          %section.cd-intro
+            %h1.wow.fadeInUp.animated.cd-headline.slide{"data-wow-delay" => ".4s"}
+              %span СВАДЕБНАЯ ФЛОРИСТИКА
+              %br
+                %img{:src => "/images/logo_full.png"}
+          %h2.wow.fadeInUp.animated{"data-wow-delay" => ".6s"}
+            бла бла бла
+            %br
+              бла бла бла

@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// require turbolinks
 //= require_tree .
 //= require fancybox
 
@@ -24,3 +24,32 @@ $("a.fancybox").fancybox({
         closeEffect : 'none'
     });
 });
+
+//scroll anchors
+jQuery(document).ready(function() {
+jQuery('body').append('<div id="top"></div>');
+jQuery("#top").click(function () {
+ jQuery("body, html").animate({
+   scrollTop: 0
+  }, 800);
+  return false;
+ });
+ jQuery('.main-menu').find('a').click(function() {
+  var it = jQuery(this)
+   .attr('href')
+   .substring(2);
+  if(jQuery.trim(it)!=''){
+   jQuery('html,body').animate({scrollTop:jQuery('#'+it).offset().top - 80},800);
+   return false;
+  }
+ });
+});
+
+// Facebook Widget
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
