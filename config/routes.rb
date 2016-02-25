@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
 
   get 'sitemap' => 'mainpages#sitemap'
+  get 'robots' => 'mainpages#robots', format: :text
 
   get "*404", via: :all, to: "errors#not_found"
 

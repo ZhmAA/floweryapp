@@ -15,4 +15,9 @@ class MainpagesController < ApplicationController
     end
   end
 
+  def robots
+    #Write here what you want to hide and edit robots.text.erb file, + remove redirect
+    redirect_to root_url
+  end
+
 end
