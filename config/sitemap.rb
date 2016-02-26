@@ -10,7 +10,7 @@ sitemap :site do
   end
   url images_url, last_mod: Time.now, change_freq: "weekly", priority: 0.8
   Image.all.each do |image|
-    url image, last_mod: image.updated_at, priority: 0.9
+    url image, last_mod: image.updated_at, priority: 0.8
   end
   url blogs_url, last_mod: Time.now, change_freq: "weekly", priority: 0.9
   Blog.all.each do |blog|
